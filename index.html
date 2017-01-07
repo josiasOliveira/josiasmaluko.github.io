@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>WBCO TI</title>
+    <title>WBCO</title>
     <!-- Bootstrap Core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="scrolling-nav.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,8 +34,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="logo.png" class="navbar-brand page-scroll" />
-                <a class="navbar-brand page-scroll" href="#page-top">Bem vindo</a>
+                <img src="img/logo.png" class="navbar-brand page-scroll" />
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -64,7 +64,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Login</h1>
+                    <h1>LOGIN </h1>
                     <p><strong>Para iniciar as importações faça o login: </p><br />
                     <p>Usuário:</p>
                     <input type="text" class="" /><br />
@@ -80,7 +80,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="Branco" >
+                    <div class="Branco">
                         <h1>Importação de  NF's</h1>
                         <br><br><br>
                         <p>Selecione o arquivo XML e click em importar: </p>
@@ -96,8 +96,33 @@
                             <span class="form-control"></span>
                         </div>
                         <br />
-                        <a class="btn btn-default page-scroll" href="#about">importar</a>
-                        <br />
+                                         <br />
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            Importar NF
+                        </button>
+                        <a class="btn btn-primary btn-lg page-scroll" href="#import">Verificar NF's Importadas </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Atenção</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Nota fiscal processada e importada com Sucesso!
+                                    </div>
+                                    <div class="modal-footer">
+                                       
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
                     </div>
                 </div>
             </div>
@@ -108,7 +133,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1>Serviços</h1>
                 </div>
             </div>
         </div>
@@ -118,17 +143,154 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1>Contato</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="import" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Importados</h1>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>cUF</th>
+                            <th>natOp</th>
+                            <th>indPag</th>
+                            <th>mod</th>
+                            <th>serie</th>
+                            <th>nNF</th>
+                            <th>dhEmi</th>
+                            <th>tpNF</th>
+                            <th>idDest</th>
+                            <th>cMunFG</th>
+                            <th>tpImp</th>
+                            <th>tpEmis</th>
+                            <th>cDV</th>
+                            <th>tpAmb</th>
+                            <th>finNFe</th>
+                            <th>indFinal</th>
+                            <th>indPres</th>
+                            <th>procEmi</th>
+                            <th>verProc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>35</td>
+                            <td>00758601</td>
+                            <td>VENDA</td>
+                            <td>0</td>
+                            <td>55</td>
+                            <td>1</td>
+                            <td>17641</td>
+                            <td>2016-10-27T08:32:06-02:00</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>3505708</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>Futur3_2016.8.1.114</td>
+
+                            <td>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Detalhe</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade bs-example-modal-lg"  >
+                    <div class="modal-dialog modal-lg" role="document" style="width: 100%; height:100%;">
+                        <div class="modal-content">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>CNPJ</th>
+                                        <th>xNome</th>
+                                        <th>xFant</th>
+                                        <th>xLgr</th>
+                                        <th>nro</th>
+                                        <th>cMun</th>
+                                        <th>UF</th>
+                                        <th>cPais</th>
+                                        <th>xPais</th>
+                                        <th>IE</th>
+                                        <th>CRT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>03046249000126</td>
+                                        <td>JOAO MACHADO NETO BARUERI</td>
+                                        <td>CASAS DAS BALANCAS BARUERI</td>
+                                        <td>RUA CAMPOS SALES</td>
+                                        <td>1050</td>
+                                        <td>VL GRETTI</td>
+                                        <td>3505708</td>
+                                        <td>BARUERI</td>
+                                        <td>SP</td>
+                                        <td>06411150</td>
+                                        <td>1058</td>
+                                        <td>BRASIL</td>
+                                        <td>1147064297</td>
+                                        <td>206106888110</td>
+                                        <td>3</td>
+                                    </tr>
+
+                                </tbody>
+
+                                <tbody>
+                                    <tr>
+                                        <td>20326391000227</td>
+                                        <td>4 ELEMENTOS INDUSTRIA ALIMENTICIA LTDA</td>
+                                        <td>R ABAETETUBA</td>
+                                        <td>576</td>
+                                        <td>JARDIM CALIFORNIA</td>
+                                        <td>3505708</td>
+                                        <td>BARUERI</td>
+                                        <td>SP</td>
+                                        <td>06409100</td>
+                                        <td>1058</td>
+                                        <td>BRASIL</td>
+                                        <td>1141985364</td>
+                                        <td>1</td>
+                                        <td>206371216114</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- jQuery -->
-    <script src="jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- Scrolling Nav JavaScript -->
-    <script src="jquery.easing.min.js"></script>
-    <script src="scrolling-nav.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 </body>
 </html>
+
+
