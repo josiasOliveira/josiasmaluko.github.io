@@ -5899,7 +5899,7 @@ button.close {
 }
 .modal-dialog {
   position: relative;
-  width: 1900px;
+  width: auto;
   margin: 10px;
 }
 .modal-content {
@@ -5945,7 +5945,6 @@ button.close {
 .modal-body {
   position: relative;
   padding: 15px;
-  width:1900px;
 }
 .modal-footer {
   padding: 15px;
@@ -5971,16 +5970,21 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 1600px;
-    margin: 1030px auto;
+    width: 600px;
+    margin: 30px auto;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
             box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
   }
-
+  .modal-sm {
+    width: 300px;
+  }
 }
-
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
 }
 .tooltip {
   position: absolute;
